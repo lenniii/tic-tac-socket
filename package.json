@@ -4,6 +4,7 @@
     "socket.io": "^2.3.0"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   }
 }
