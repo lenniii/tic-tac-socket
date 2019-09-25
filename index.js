@@ -4,7 +4,7 @@ const path = require("path");
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 
-app.use("/static", express.static(path.join(__dirname, "/client/build")));
+app.use(express.static(path.join(__dirname, "/client/build")));
 
 app.get("/server/", (req, res) => {
   res.sendStatus(200);
